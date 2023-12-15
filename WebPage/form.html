@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+        <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="./css/reset.css">
+            <link rel="stylesheet" href="./css/form.css">
+            <title>支払フォーム</title>
+        </head>
+    <body>
+        <div class="title">支払い</div>
+        <div id="form_error">
+            <a id="name_error" class="hide">エラー1:氏名が入力されていません</a>
+            <a id="name_error2" class="hide">エラー2:氏名に使用できない文字列が使われています</a>
+            <a id="age_error" class="hide">エラー3:年齢が入力されていません</a>
+            <a id="age_error2" class="hide">エラー4:年齢は数字で入力してください</a>
+            <a id="postal_code-error1" class="hide">エラー5:郵便番号が入力されていません</a>
+            <a id="postal_code-error2" class="hide">エラー6:郵便番号は数字で入力してください</a>
+            <a id="adress1_error" class="hide">エラー7:都道府県が入力されていません</a>
+            <a id="adress2_error" class="hide">エラー8:市区町村が入力されていません</a>
+            <a id="adress3_error" class="hide">エラー9:町域が入力されていません</a>
+            <a id="mail_adress-error1" class="hide">エラー10:メールアドレスが入力されていません</a>
+            <a id="mail_adress-error2" class="hide">エラー11:このメールアドレスは不正です</a>           
+            <a id="credit_number-error1" class="hide">エラー12:クレジット番号が入力されていません</a>
+            <a id="credit_number-error2" class="hide">エラー13:クレジット番号に誤りがあります。</a>
+            <a id="password_error" class="hide">エラー14:パスワードが入力されていません</a>
+        </div>
+        <div id="form">
+            <div id="name_console"class="twomoji">氏名<input type="text" id="Input_name" ></div>
+            <div id="age_console"class="twomoji">年齢<input type="text" id="Input_age" ></div>
+            <div id="postal_code-console"class="fourmoji">郵便番号<input type="text" id="Input_postal-code" ></div>
+            <div id="prefecture_console"class="fourmoji">都道府県<input type="text" id="Input_adress" ></div>
+            <div id="city_console"class="fourmoji">市区町村<input type="text" id="Input_city" ></div>
+            <div id="townarea_console"class="twomoji">町域<input type="text" id="Input_townarea" ></div>
+            <div id="mailadress_console"><P>メールアドレス</P><input type="text" id="Input_mail-adress"></div>
+            <div id="cardnumber_console"><p>クレジット番号</p><input type="text" id="Input_credit-number"></div>
+            <div id="password_console"><p>パスワード</p><div class="password_container"><input type="password" id="Input_password" ><div id="password_ckbtn">確認</div></div></div>
+        </div>
+        <div id="btn_container">
+        <a id="nextbtn" href="./thankyou.html">送信</a>
+        </div>
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="./js/form.js"></script>
+    </body>
+</html>

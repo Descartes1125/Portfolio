@@ -1,0 +1,67 @@
+<html>
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <link rel="stylesheet" href="./css/reset.css">
+            <link rel="stylesheet" href="./css/custompage.css">
+            <title>カードショップ</title>
+        </head>
+
+ <body>
+  <div class="type_result"></div>
+
+
+    <div class="card_result"><p class="load">読み込み中...</p></div>
+    <div id="cart">
+        <table id="buyitem" >
+          <thead>
+            <tr>
+              <th>商品名</th>
+              <th>単価</th>
+              <th>個数</th>
+              <th>消費税</th>
+              <th>価格</th>
+            </tr>
+          </thead>
+          <tbody>
+           
+          </tbody>
+          <tfoot>
+            <tr>
+              <th colspan="4">総合計</th>
+              <td id="totalPrice">0</td> 
+            </tr>
+          </tfoot>
+          </table>         
+          <input type="button" id="order_confirm" value="注文する">
+    </div>
+    <div id="user_choice" class="hide">
+      <p>このサイトを利用するのは初めてですか？</p>
+      <input type="button" id="Yes_button" value="はい"><input type="button" id="No_button" value="いいえ">
+    </div>
+        <div class="login hide">
+          <p>メールアドレス:<input type="text" name="mail" class="mail" onkeydown="return preventEnterSubmitAndMoveNext(event)"></p>
+          <p>パスワード:<input type="password" name="pass" class="pass"></p>
+          <p><input type="button" id="check_acount" value="ログイン"></p>
+          <div class="acount_choice"></div>
+          <input type="button" id="regist_order" class="hide" value="注文確定"></input>
+
+        </div>
+       
+    <div class="user_regist hide">
+        <div><p>名前:<input type="text" name="name" id="name_input" onkeydown="return preventEnterSubmitAndMoveNext(event)"><span id="name_error" class="error">※必須項目です　</span><span id="name_error2" class="error">※正しい形式で入力してください</span></p></div>
+        <div><p>メールアドレス:<input type="text" name="mail" id="mail_input" onkeydown="return preventEnterSubmitAndMoveNext(event)"><span id="mail_error" class="error">※必須項目です　</span><span id="mail_error2" class="error">※正しい形式で入力してください</span></p></div>
+        <div><p>郵便番号:<input type="text" name="postal_code" id="postal_input" onkeydown="return preventEnterSubmitAndMoveNext(event)"><span id="postal_error" class="error">※必須項目です　</span><span id="postal_error2" class="error">※正しい形式で入力してください</span></p></div>
+        <div><p>住所:<input type="text" name="adress" id="adress_input"onkeydown="return preventEnterSubmitAndMoveNext(event)"><span id="address_error" class="error">※必須項目です　</span><span id="address_error2" class="error">※正しい形式で入力してください</span></p></div>
+        <div><p>パスワード: <input type="password" name="pass" id="pass_input"><span id="pass_error" class="error">※必須項目です　</span><span id="pass_error2" class="error">※8文字以上にしてください</span><span id="pass_error3" class="error">※大文字小文字数字を各1文字以上含めてください</span></p></div>
+        <input type="button" id="create_acount" value="会員登録">
+        <div class="acount_confirm"></div>
+        <input type="button" id="regist_order2" class="hide" value="注文確定"></input>
+    </div>
+    
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/ajax_C.js"></script>
+    <script src="./js/custompage.js"></script>
+    <script src="./js/validation.js"></script>
+ </body>
+
+</html>
